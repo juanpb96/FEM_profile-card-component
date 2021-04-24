@@ -1,27 +1,107 @@
 @import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap);
+@import './sass/helpers/variables';
 
 body {
-    background-color: hsl(185, 75%, 39%);
+    background-color: $body-bg-color;
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position-x: 120%, -20%;
-    background-position-y: 70%, -20%;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
+    background-position-x: 125%, -30%;
+    background-position-y: 200%, -80%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
     width: 100%;
+    min-height: 40rem;
+    display: flex;
+}
+
+.card {
+    font-size: 18px;
+    width: 335px;
+    margin: auto;
+    background-color: $card-bg-color;
+    border-radius: 15px;
+    position: relative;
+
+    &__banner {
+        
+        .banner__img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+    }
+
+    &__photo {
+        width: $photo-size;
+        height: $photo-size;
+        border: 5px solid #FFF;
+        border-radius: 50%;
+        position: absolute;
+        top: 82px;
+        left: calc(50% - #{($photo-size + 10) / 2});
+        .photo__img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__description {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__name {
+        font-size: 1em;       
+        font-weight: 700;
+        color: $title-color;
+    }
+
+    &__age {
+        font-weight: 400;
+        color: $description-color;
+    }
+
+    &__city {
+        font-size: 14px;
+        color: $description-color;
+    }
+
+    &__stats {
+        border-top: 1px solid #EAEAEA;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+
+        .stat {
+            text-align: center;
+
+            &__title {
+                margin-bottom: 0;
+                font-size: 1em;       
+                font-weight: 700;
+                color: $title-color;
+            }
+
+            &__text {
+                margin-top: 10px;
+                font-size: 12px;
+                color: $stat-color;
+            }
+        }
+    }
+
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 12px; 
     text-align: center; 
     
     a { 
-        color: hsl(228, 45%, 44%); 
+        color: hsl(228, 74%, 49%); 
     }
 }
