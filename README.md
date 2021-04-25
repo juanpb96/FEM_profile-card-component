@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/profile-card-html-sass-bem-zfevFfH7g)
 - Live Site URL: [See live site here](https://juanbonilla.me/FEM_profile-card-component/)
 
 ## My process
