@@ -17,7 +17,7 @@
 .prettierignore
 
 # Avoid md file
-*.md
+style-guide.md
 
 # Avoid sass cache
 .sass-cache
