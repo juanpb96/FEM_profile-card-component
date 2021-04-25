@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap);
+.card__name, .card__stats .stat__title {
+  font-size: 1em;
+  font-weight: 700;
+  color: #2d3248; }
+
 body {
   background-color: #19a2ae;
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
@@ -40,10 +45,6 @@ body {
     margin-top: 70px;
     margin-bottom: 20px;
     text-align: center; }
-  .card__name {
-    font-size: 1em;
-    font-weight: 700;
-    color: #2d3248; }
   .card__age {
     font-weight: 400;
     color: #6a6f81; }
@@ -58,10 +59,7 @@ body {
     .card__stats .stat {
       text-align: center; }
       .card__stats .stat__title {
-        margin-bottom: 0;
-        font-size: 1em;
-        font-weight: 700;
-        color: #2d3248; }
+        margin-bottom: 0; }
       .card__stats .stat__text {
         margin-top: 10px;
         font-size: 12px;
@@ -72,5 +70,18 @@ body {
   text-align: center; }
   .attribution a {
     color: #2045d9; }
+
+@media only screen and (min-width: 700px) {
+  body {
+    background-position-x: 200%, -110%;
+    background-position-y: 200%, -80%; } }
+@media only screen and (min-width: 1000px) {
+  body {
+    background-position-x: -90%, 170%;
+    background-position-y: 160%, -100%; } }
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position-x: -50%, 150%;
+    background-position-y: 200%, -100%; } }
 
 /*# sourceMappingURL=style.css.map */
