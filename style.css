@@ -8,8 +8,8 @@ body {
   background-color: #19a2ae;
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position-x: 125%, -30%;
-  background-position-y: 200%, -80%;
+  background-position-x: right 50vw, left 40vw;
+  background-position-y: bottom 40vh, top 52vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 100%;
-  min-height: 40rem;
+  min-height: 44rem;
   display: flex; }
 
 .card {
@@ -71,18 +71,5 @@ body {
   padding: 10px 0; }
   .attribution a {
     color: #2045d9; }
-
-@media only screen and (min-width: 700px) {
-  body {
-    background-position-x: 200%, -110%;
-    background-position-y: 200%, -80%; } }
-@media only screen and (min-width: 1000px) {
-  body {
-    background-position-x: -90%, 170%;
-    background-position-y: 160%, -100%; } }
-@media only screen and (min-width: 1440px) {
-  body {
-    background-position-x: -50%, 150%;
-    background-position-y: 200%, -100%; } }
 
 /*# sourceMappingURL=style.css.map */
